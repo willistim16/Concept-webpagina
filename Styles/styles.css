@@ -40,13 +40,15 @@ h1 {
     font-size: 44px;
 }
 
-h2 {font-family: "Merriweather", serif;
+h2 {
+    font-family: "Merriweather", serif;
     font-weight: 700;
     font-size: 32px;
     margin: 30px 0;
 }
 
 h3 {
+    font-family: "Merriweather", serif;
     font-size: 27px;
     font-weight: 300;
     color: white;
@@ -160,8 +162,7 @@ a {
 .article-section {
     background-color: #F3F6F9;
     /*padding: 80px 20px 0 20px;*/
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding: 80px 0;
     margin: 0 20px;
 }
 
@@ -169,7 +170,7 @@ a {
     max-width: 100%;
     flex-grow: 0;
     flex-shrink: 1;
-    box-shadow: 0 40px 20px -10px lightgrey;
+    box-shadow: 38px 28px 15px -10px lightgrey;
 }
 
 .article-section p {
@@ -233,4 +234,50 @@ a {
     flex-basis: 400px;
 }
 
+/* --------------- 4.4 Tiles ----------------- */
+
+.tile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    padding: 40px 80px;
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 380px;
+    height: 380px;
+    margin: 20px 20px;
+    padding: 60px 40px;
+    border: 2px solid #5722CD;
+    box-shadow: 0px 13px 20px -10px lightgrey;
+
+
+}
+
+.tile-container img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.tile-container h3 {
+    color: #5722CD;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.tile-container p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #7A7A7A;
+    margin-top: 20px;
+}
+
+.logo-and-branding {
+    padding-top: 50px;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
