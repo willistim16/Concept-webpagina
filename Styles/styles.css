@@ -30,254 +30,381 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
-
-/* ------------------------------- 2. Typography ----------------------------------- */
-
-h1 {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    margin: 30px;
-    font-size: 44px;
-}
-
-h2 {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-size: 32px;
-    margin: 30px 0;
-}
-
-h3 {
-    font-family: "Merriweather", serif;
-    font-size: 27px;
-    font-weight: 300;
-    color: white;
-}
-
-body {
-    font-family: "Roboto", serif;
-    font-weight: 200;
-    font-style: normal;
-    margin: 0 auto;
-}
-
-main {
-    max-width: 1600px;
-    color: black;
-}
-/* ------------------------------- 3. Layout --------------------------------------- */
-
-/* --------------- 3.1 Reusables ----------------------- */
-
-/* --------------- 3.2 Other --------------------------- */
-
-/* ------------------------------- 4. Areas ---------------------------------------- */
-
-/* --------------- 4.1 Header ------------------------- */
-.outer-container-header {
-    display: flex;
-    flex-direction: column;
-    max-width: 1500px;
-    align-content: center;
-    background: rgb(72,69,228);
-    background: linear-gradient(158deg, rgba(72,69,228,1) 61%, rgba(87,34,205,1) 95%);
-    color: white;
-    padding-top: 20px;
-    margin: 0 auto;
-}
-
-.nav-container {
+.triangle-background {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-self: flex-end;
+    justify-content: center;
     width: 100%;
-    padding: 20px 0;
+    margin-top: -50px;
+    border-bottom: 50px solid white;
+    border-right: 1500px solid transparent;
 }
 
-.nav-container ul {
+.triangle-background-2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    width: 500px;
-    font-size: 21px;
-    font-weight: 300;
+    margin: -250px auto 200px auto;
+    border-bottom: 50px solid transparent;
+    border-right: 1480px solid white;
 }
 
-.header-group {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    max-width: 900px;
-    margin: 80px auto;
-    text-align: center;
+.triangle-background-3 {
+    width: 100%;
+    border-bottom: 50px solid white;
+    border-right: 1500px solid transparent;
 }
 
-.button {
-    border-radius: 35px;
-    background-color: #ED4385;
-    color: white;
-    box-shadow: -2px 5px 20px 0 rgba(0, 0, 0, 0.3);
-    padding: 22px 35px 23px 35px;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 30px auto 0 auto;
-    border-style: none;
-    width: 250px;
-    /*letter-spacing: 1px;*/
-    text-transform: uppercase;
+.triangle-background-4 {
+    width: 100%;
+    border-bottom: 50px solid transparent;
+    border-right: 1500px solid white;
 }
+    /* ------------------------------- 2. Typography ----------------------------------- */
 
-.image-lower-header {
-    align-self: center;
-    margin-bottom: -20px;
-}
-/* --------------- 4.2 Introduction ------------------- */
-.introduction {
-    margin: 100px auto;
-    max-width: 850px;
-    text-align: center;
-}
+    h1 {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        margin: 30px;
+        font-size: 44px;
+    }
 
-.introduction h2 {
-    color: #5722CD;
-}
+    h2 {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-size: 32px;
+        margin: 30px 0;
+    }
 
-.introduction p {
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 100px auto 80px auto;
-}
+    h3 {
+        font-family: "Merriweather", serif;
+        font-size: 27px;
+        font-weight: 300;
+        color: white;
+    }
 
-a {
-    color: #5722CD;
-    text-decoration: none;
-}
+    body {
+        font-family: "Roboto", serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0 auto;
+    }
 
-/* --------------- 4.3 Projects ----------------- */
+    main {
+        max-width: 1600px;
+        color: black;
+    }
 
-.article-section {
-    background-color: #F3F6F9;
-    /*padding: 80px 20px 0 20px;*/
-    padding: 80px 0;
-    margin: 0 20px;
-}
+    footer {
+        background-color: black;
+        color: white;
+        height: 70px;
+        max-width: 1500px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0 auto 40px auto;
+    }
+    /* ------------------------------- 3. Layout --------------------------------------- */
 
-.article-section img {
-    max-width: 100%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    box-shadow: 38px 28px 15px -10px lightgrey;
-}
+    /* --------------- 3.1 Reusables ----------------------- */
 
-.article-section p {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 40px 0 50px 0;
-}
+    /* --------------- 3.2 Other --------------------------- */
 
-.article-section a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 13px;
-    margin: 10px 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 0 1px #5722CD;
-}
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 860px;
+        background: linear-gradient(158deg, rgba(72,69,228,1) 61%, rgba(87,34,205,1) 95%);
+        max-width: 1500px;
+        color: white;
+        margin: 0 auto;
+    }
 
-.rolling-stone-project {
-    display: flex;
-    flex-direction: row;
-    max-width: 1500px;
-}
+    .h2-form {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: center;
+        margin: 0 auto 30px auto;
+    }
 
-.article-text-rolling-stone {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 100px;
-    flex-basis: 400px;
-}
+    .h2-form p {
+        font-size: 20px;
+        font-weight: 300;
+    }
 
-.variety-project {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 100px auto;
-    max-width: 1500px;
-}
+    .h2-form h2 {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-size: 44px;
+        padding-top: 80px;
+    }
 
-.article-text-variety {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 15px 40px 15px 150px;
-    flex-basis: 400px;
-}
+    .input-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 850px;
+    }
 
-.worth-project {
-    display: flex;
-    flex-direction: row;
-    margin: 100px auto;
-    max-width: 1500px;
-}
+    .input-area input {
+        margin-bottom: 20px;
+        width: 850px;
+        height: 65px;
+        justify-items: center;
+        padding-left: 20px;
+        border-radius: 3px;
+        border-style: none;
+        font-family: "Roboto", serif;
+        color: #7A7A7A;
+        font-weight: 400;
+        font-size: 16px;
+        /*text-shadow: 0 0 1px ;*/
+    }
 
-.article-text-worth {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 100px;
-    flex-basis: 400px;
-}
+    .input-area textarea {
+        margin: 0 auto;
+        width: 850px;
+        flex-basis: 220px;
+        justify-items: flex-start;
+        padding-left: 15px;
+        padding-top: 15px;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "Roboto", serif;
+        /*text-shadow: 0 0 1px ;*/
+    }
 
-/* --------------- 4.4 Tiles ----------------- */
+    .input-area label {
+        color: white;
+        font-weight: 500;
+    }
 
-.tile-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 40px auto;
-    padding: 40px 80px;
-}
+    .form-section button {
+        width: 200px;
+        padding: 25px 0;
+        margin: 35px auto;
+    }
 
-.tile-container {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 380px;
-    height: 380px;
-    margin: 20px 20px;
-    padding: 60px 40px;
-    border: 2px solid #5722CD;
-    box-shadow: 0px 13px 20px -10px lightgrey;
+    /* ------------------------------- 4. Areas ---------------------------------------- */
 
+    /* --------------- 4.1 Header ------------------------- */
+    .outer-container-header {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        align-content: center;
+        background: linear-gradient(158deg, rgba(72,69,228,1) 61%, rgba(87,34,205,1) 95%);
+        color: white;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
 
-}
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
+        width: 100%;
+        padding: 20px 0;
+    }
 
-.tile-container img {
-    max-width: 80px;
-    max-height: 80px;
-}
+    .nav-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 500px;
+        font-size: 21px;
+        font-weight: 300;
+    }
 
-.tile-container h3 {
-    color: #5722CD;
-    margin: 10px 0;
-    font-weight: 700;
-    font-size: 24px;
-}
+    .nav-container a {
+        color: white;
+    }
+    .header-group {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        max-width: 900px;
+        margin: 80px auto;
+        text-align: center;
+    }
 
-.tile-container p {
-    font-weight: 400;
-    font-size: 15px;
-    color: #7A7A7A;
-    margin-top: 20px;
-}
+    .button {
+        border-radius: 35px;
+        background-color: #ED4385;
+        color: white;
+        box-shadow: -2px 5px 20px 0 rgba(0, 0, 0, 0.3);
+        padding: 23px 35px;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 30px auto 0 auto;
+        border-style: none;
+        width: 260px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
 
-.logo-and-branding {
-    padding-top: 50px;
-}
+    .image-lower-header {
+        align-self: center;
+        margin-bottom: -20px;
+    }
+
+    /* --------------- 4.2 Introduction ------------------- */
+
+    .introduction {
+        margin: 150px auto;
+        max-width: 850px;
+        text-align: center;
+    }
+
+    .introduction h2 {
+        color: #5722CD;
+    }
+
+    .introduction p {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 100px auto 80px auto;
+    }
+
+    a {
+        color: #5722CD;
+        text-decoration: none;
+    }
+
+    /* --------------- 4.3 Projects ----------------- */
+
+    .case-studies-section {
+        background-color: #F3F6F9;
+        /*padding: 80px 20px 0 20px;*/
+        padding: 250px 0 50px 0;
+        margin: 0 20px;
+    }
+
+    .case-studies-section img {
+        max-width: 100%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        box-shadow: 0 28px 15px -10px lightgrey;
+        margin: 40px 40px;
+    }
+
+    .case-studies-section p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 40px 0 50px 0;
+    }
+
+    .case-studies-section a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 13px;
+        margin: 10px 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 0 0 1px #5722CD;
+    }
+
+    .rolling-stone-project {
+        display: flex;
+        flex-direction: row;
+        max-width: 1500px;
+    }
+
+    .article-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 100px;
+        flex-basis: 380px;
+    }
+
+    .variety-project {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 100px auto;
+        max-width: 1500px;
+    }
+
+    .article-text-variety {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 40px 15px 150px;
+        flex-basis: 380px;
+    }
+
+    .worth-project {
+        display: flex;
+        flex-direction: row;
+        margin: 100px auto;
+        max-width: 1500px;
+    }
+
+    /* --------------- 4.4 Services ----------------- */
+
+    .services-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        padding: 40px 80px;
+    }
+
+    .tile-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 380px;
+        /*height: 380px;*/
+        flex-grow: 0;
+        flex-shrink: 1;
+        margin: 20px 20px;
+        padding: 60px 40px;
+        border: 2px solid #5722CD;
+        box-shadow: 0 13px 20px -10px lightgrey;
+    }
+
+    .tile-container img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .tile-container h3 {
+        color: #5722CD;
+        margin: 10px 0;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .tile-container p {
+        font-weight: 400;
+        font-size: 15px;
+        color: #7A7A7A;
+        margin-top: 20px;
+    }
+
+    .logo-and-branding {
+        padding-top: 50px;
+    }
+
+    /* --------------- 4.5 Footer ----------------- */
+
+    .footer-p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 300;
+        padding-top: 25px;
+    }
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
